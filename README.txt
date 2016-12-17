@@ -6,6 +6,6 @@ original noisy image. The step size of S depends on the image set.
 
 'TWDLMS.m' has the implemented 1 step of the 2D LMS adaptive algorithm. It takes a the input image, the desired image, and S. 
 S is a struct with 3 parameters. Step: the convergence factor of the LMS. filterOrderNo: the square root of the total number of weights. initialCoefs: Initial 2D weight matrix
-Returns the enhanced output image, an error image, and the coefficients at each step of LMS. 
+Returns the enhanced output image matrix, an error image matrix, and a 3D matrix with the weight coefficients at each step of LMS. 
 Can be used to implement other applications such as DCT for compression. 
 
